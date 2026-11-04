@@ -1,0 +1,7 @@
+/* Compact, responsive presentation when embedded as a Google Sites full-page element. */
+.embed-banner{display:none;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:12px 20px;background:#123a63;color:#eaf7ff;border-bottom:1px solid #3c739e}
+.embed-banner strong{font-size:13px}.embed-banner a{font-size:13px;color:#e0f2fe;background:#14517d;border:1px solid #5b9dc6;border-radius:8px;text-decoration:none;padding:8px 12px}
+body.is-embedded .embed-banner{display:flex}body.is-embedded .layout{grid-template-columns:210px minmax(0,1fr)}body.is-embedded .content{padding:20px clamp(14px,2.5vw,30px)}
+body.is-embedded .sidebar{padding:16px 10px}body.is-embedded .sidebar-bottom{display:none}
+@media(max-width:950px){body.is-embedded .layout{grid-template-columns:1fr}body.is-embedded .sidebar{padding:12px}body.is-embedded .nav{display:flex;flex-flow:row nowrap;overflow-x:auto;scrollbar-width:thin}body.is-embedded .nav button{flex:0 0 auto;width:auto;white-space:nowrap;padding:12px}body.is-embedded .sidebar-bottom{display:none}}
+@media(max-width:620px){body.is-embedded .hero,body.is-embedded .two{grid-template-columns:minmax(0,1fr)}body.is-embedded .topline{align-items:flex-start;flex-direction:column}body.is-embedded .viewer{height:300px}body.is-embedded .content{padding:14px}body.is-embedded .sidebar{gap:10px}}
